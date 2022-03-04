@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "1320"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "707FDF6D84FDF8B3D0148E028188D646"
-               BuildableName = "Pods_Flix.framework"
-               BlueprintName = "Pods-Flix"
+               BlueprintIdentifier = "E8F799647E818A642CBD75095F0F911A"
+               BuildableName = "Pods_Flix_FlixUITests.framework"
+               BlueprintName = "Pods-Flix-FlixUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

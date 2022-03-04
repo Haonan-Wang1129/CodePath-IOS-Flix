@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+import SwiftUI
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -61,6 +62,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.posterView.af.setImage(withURL: posterUrl)
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let path = tableView.indexPath(for: cell)!
+        let movie = movies[path.row]
+        
+        let detailViewController = segue.destination as! MovieDetailViewController
+        detailViewController.movie = movie
+        
+        tableView.deselectRow(at: path, animated: true)
     }
 
 
